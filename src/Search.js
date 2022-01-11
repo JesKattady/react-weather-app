@@ -31,7 +31,7 @@ export default function Search() {
     setWeatherData({
       temperature: response.data.main.temp,
       city: response.data.name,
-      date: new Date(response.data.dt * 1000),
+      timestamp: response.data.dt,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -62,7 +62,7 @@ export default function Search() {
               <Weather
                 city={weatherData.city}
                 temperature={Math.round(weatherData.temperature)}
-                dateNow={weatherData.date}
+                now={weatherData.timestamp}
               />
             </Col>
             <Col>
