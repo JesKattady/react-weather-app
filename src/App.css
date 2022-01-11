@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #b5eaea;
+  --secondary-color: #edf6e5;
+  --tertiary-color: #ffbcbc;
+  --accent-color: #f38ba0;
+}
+.App {
+  padding: 30px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.App h6 {
+  font-family: monospace;
+  color: grey;
+  font-size: 10px;
+}
+.Search {
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+.Weather h1 {
+  font-size: 50px;
+}
+.Weather {
+  padding-top: 50px;
+  text-align: left;
+}
+.Weather .units {
+  font-size: 12px;
+  position: relative;
+  top: -25px;
+}
+
+.Forecast,
+ul {
+  list-style: none;
+
+  text-align: right;
+}
+.submit {
+  background-color: var(--accent-color);
+  border: solid 1px var(--accent-color);
+  border-radius: 5px;
+  padding: 3px 6px;
+  color: white;
+}
+.search {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
