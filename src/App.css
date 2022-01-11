@@ -24,8 +24,17 @@
 .Weather h1 {
   font-size: 50px;
 }
+.Weather h2 {
+  font-size: 30px;
+}
+.Weather h4 {
+  font-size: 15px;
+}
+.Weather h5 {
+  font-size: 10px;
+}
 .Weather {
-  padding-top: 50px;
+  padding-top: 30px;
   text-align: left;
 }
 .Weather .units {

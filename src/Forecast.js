@@ -1,4 +1,5 @@
 import React from "react";
+import Icon from "./Icon";
 
 import "./App.css";
 
@@ -7,7 +8,7 @@ export default function Forecast(props) {
     <div className="Forecast">
       <ul>
         <li>
-          <img src={props.icon} alt="icon" />
+          <Icon icon={props.icon} des={props.description} />
         </li>
         <li>
           <strong className="text-capitalize"> {props.description} </strong>
