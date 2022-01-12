@@ -37,11 +37,7 @@
   padding-top: 30px;
   text-align: left;
 }
-.Weather .units {
-  font-size: 12px;
-  position: relative;
-  top: -25px;
-}
+
 
 .Forecast,
 ul {

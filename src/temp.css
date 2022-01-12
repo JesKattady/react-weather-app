@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+a:hover {
+  color: var(--accent-color);
+}
+
+.units {
+  font-size: 12px;
+  position: relative;
+  top: -25px;
+}
+
+.currentUnit {
+  font-size: 20px;
+}

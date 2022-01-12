@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherTemp from "./WeatherTemp";
 
 export default function Weather(props) {
   let days = [
@@ -49,8 +50,8 @@ export default function Weather(props) {
         {day}, {date} {month}
       </h4>
       <h1>
-        {props.temperature} <span className="units">°C|°K</span>
-      </h1>
+        <WeatherTemp tempC={props.temperature} />
+        </h1>
     </div>
   );
 }
