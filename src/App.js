@@ -5,7 +5,17 @@ function App() {
   return (
     <div className="App">
       <Search />
-          </div>
+      <h6>
+        By Jesna Kattady,
+        <a
+          href="https://github.com/JesKattady/react-weather-app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub repository
+        </a>
+      </h6>
+    </div>
   );
 }
 
