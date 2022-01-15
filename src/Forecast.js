@@ -8,7 +8,12 @@ export default function Forecast(props) {
     <div className="Forecast">
       <ul>
         <li>
-          <Icon icon={props.icon} des={props.description} />
+          <Icon
+            icon={props.icon}
+            des={props.description}
+            size={75}
+            color="#f38ba0"
+          />
         </li>
         <li>
           <strong className="text-capitalize"> {props.description} </strong>

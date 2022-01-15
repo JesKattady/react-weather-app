@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ReactLoading from "react-loading";
+import DailyForecast from "./DailyForecast";
 
 export default function Search() {
   const [ready, setReady] = useState(false);
@@ -75,6 +76,7 @@ export default function Search() {
             </Col>
           </Row>
         </Container>
+        <DailyForecast />
       </div>
     );
   } else {
