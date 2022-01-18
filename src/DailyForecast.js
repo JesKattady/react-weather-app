@@ -3,9 +3,18 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Icon from "./Icon";
+import axios from "axios";
 import "./dailyForecast.css";
 
-export default function DailyForecast() {
+export default function DailyForecast(props) {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+  let apiKey = "115c7b570e452f9a86cfdde576ef94e1";
+  let lon = props.lon;
+  let lat = props.lat;
+  let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(url).then(handleResponse);
   return (
     <div className="daily_forecast">
       <Container>

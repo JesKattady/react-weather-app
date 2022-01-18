@@ -37,6 +37,8 @@ export default function Search() {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       icon: response.data.weather[0].icon,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
     });
   }
   let form = (
@@ -76,7 +78,7 @@ export default function Search() {
             </Col>
           </Row>
         </Container>
-        <DailyForecast />
+        <DailyForecast lat={weatherData.lat} lon={weatherData.lon} />
       </div>
     );
   } else {
