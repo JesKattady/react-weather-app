@@ -10,6 +10,7 @@ import ReactLoading from "react-loading";
 import DailyForecast from "./DailyForecast";
 
 export default function Search() {
+
   const [ready, setReady] = useState(false);
   let [weatherData, setWeatherData] = useState({});
   let [city, setCity] = useState("");
