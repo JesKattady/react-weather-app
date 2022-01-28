@@ -1,19 +1,15 @@
 import React from "react";
-import Icon from "./Icon";
 
 import "./App.css";
 
 export default function Forecast(props) {
+  let link = ` http://openweathermap.org/img/wn/${props.weatherIcon}@2x.png`;
+
   return (
     <div className="Forecast">
       <ul>
         <li>
-          <Icon
-            icon={props.icon}
-            des={props.description}
-            size={75}
-            color="#f38ba0"
-          />
+          <img src={link} alt={props.description} />
         </li>
         <li>
           <strong className="text-capitalize"> {props.description} </strong>

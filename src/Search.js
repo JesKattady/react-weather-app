@@ -72,7 +72,7 @@ export default function Search() {
                 description={weatherData.description}
                 humidity={weatherData.humidity}
                 wind={weatherData.wind}
-                icon={weatherData.icon}
+                weatherIcon={weatherData.icon}
               />
             </Col>
           </Row>
