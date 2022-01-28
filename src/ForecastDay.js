@@ -7,16 +7,8 @@ import "./dailyForecast.css";
 
 export default function ForecastDay(props) {
   console.log(props);
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let maxTemp = props.temp.max;
+
+  let maxTemp = 3;
   let minTemp = 2;
 
   return (
