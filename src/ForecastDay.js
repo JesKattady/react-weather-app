@@ -1,15 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Icon from "./Icon";
-import axios from "axios";
+
 import "./dailyForecast.css";
 
-export default function DailyForecast(props) {
-  console.log(props.day.daily[0]);
-  let maxTemp = props.day.temp.max;
-  let minTemp = props.day.temp.min;
+export default function ForecastDay(props) {
+  console.log(props);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let maxTemp = props.temp.max;
+  let minTemp = 2;
 
   return (
     <div className="daily_forecast">
@@ -19,11 +28,11 @@ export default function DailyForecast(props) {
             <h4>Thu </h4>
             <div>
               {" "}
-              <Icon icon="01d" size={25} color="#ffbcbc" />{" "}
+              <Icon icon="09d" size={25} color="#ffbcbc" />{" "}
             </div>
             <h4 className="hl_temp">
               {" "}
-              <strong>{Math.round(maxTemp)} °</strong> {Math.round(minTemp)}°
+              <strong>{Math.round(maxTemp)}°</strong> {Math.round(minTemp)}°
             </h4>
           </Col>
         </Row>

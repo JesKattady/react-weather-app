@@ -10,7 +10,6 @@ import ReactLoading from "react-loading";
 import DailyForecast from "./DailyForecast";
 
 export default function Search() {
-
   const [ready, setReady] = useState(false);
   let [weatherData, setWeatherData] = useState({});
   let [city, setCity] = useState("");
@@ -38,8 +37,7 @@ export default function Search() {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       icon: response.data.weather[0].icon,
-      lat: response.data.coord.lat,
-      lon: response.data.coord.lon,
+      coord: response.data.coord,
     });
   }
   let form = (
@@ -79,7 +77,7 @@ export default function Search() {
             </Col>
           </Row>
         </Container>
-        <DailyForecast lat={weatherData.lat} lon={weatherData.lon} />
+        <DailyForecast coord={weatherData.coord} />
       </div>
     );
   } else {
