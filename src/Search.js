@@ -7,7 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ReactLoading from "react-loading";
-
+import ForecastDaily from "./ForecastDaily";
 export default function Search() {
   const [ready, setReady] = useState(false);
   let [weatherData, setWeatherData] = useState({});
@@ -76,6 +76,7 @@ export default function Search() {
             </Col>
           </Row>
         </Container>
+        <ForecastDaily coord={weatherData.coord}/>
       </div>
     );
   } else {
